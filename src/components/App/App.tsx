@@ -33,7 +33,7 @@ export default function App() {
   const openModal = (movie:Movie) => setSelectedMovie(movie);
   const closeModal = () => setSelectedMovie(null);
 
-  const handleSearch = async (query: string) => {
+  const handleSearch = (query: string) => {
     setMovie(query);
     setCurrentPage(1);
   };
